@@ -15,7 +15,10 @@ di una volta -->
         <div>
             <?php 
             for ($i=0; count($numeri) < 15 ; $i++) { 
-                array_push($numeri, rand(0,100));
+                $numero = rand(0,100);
+                if (!(in_array($numero, $numeri))) {
+                    array_push($numeri, $numero);
+                }
             }
             ?>
             <?php foreach ($numeri as $numero) {?>
