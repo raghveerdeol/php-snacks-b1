@@ -39,21 +39,19 @@ grigio e i PM in un rettangolo verde. -->
     <main>
             <div class="<?php if ($db['teachers']) {  echo 'grey';} ?>">
                 <?php foreach ($db['teachers'] as $key => $teacher) {?>
-                    <?php foreach ($teacher as $key => $value) { ?> 
-                        <p>
-                            <?php echo $value; ?>
-                        </p>
-                    <?php } ?>
-                <?php } ?> 
+                    <p>
+                        <?php echo $teacher['name']; ?>
+                        <?php echo $teacher['lastname']; ?>
+                    </p>
+            <?php } ?> 
             </div>
             <div class="<?php if ($db['pm']) {  echo 'green';} ?>">
             <?php foreach ($db['pm'] as $key => $single_pm) {?>
-                    <?php foreach ($single_pm as $key => $value) { ?> 
-                        <p>
-                            <?php echo $value; ?>
-                        </p>
-                    <?php } ?>
-                <?php } ?> 
+                    <p>
+                        <?php echo $single_pm['name']; ?>
+                        <?php echo $single_pm['lastname']; ?>
+                    </p>
+            <?php } ?> 
             </div>
     </main>
 </body>
