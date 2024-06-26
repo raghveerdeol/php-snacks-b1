@@ -55,7 +55,7 @@ Qui l’array di esempio: https://www.codepile.net/pile/R2K5d68z -->
     <main>
         <div>
             <?php foreach ($posts as $key => $post) {?>
-                <h1> <?php $key ?> </h1>
+                <h1> <?php echo $key; ?> </h1>
                 <div class="card">
                     <?php foreach ($post as $card) { ?>
                     <p> <?php echo $card["title"]; ?> </p>
