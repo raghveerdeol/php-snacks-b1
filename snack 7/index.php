@@ -25,8 +25,8 @@ Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
                         <?php echo $studente["cognome"] ?>
                     </li>
                     <li>
-                        <?php foreach ($ as key => value) {?>
-                        
+                        <?php foreach ($studente["voti"] as $key => $value) {?>
+                            <?php echo $value ?>
                         <?php } ?>,
                     </li>
                 <?php } ?>
