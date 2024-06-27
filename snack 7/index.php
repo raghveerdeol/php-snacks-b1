@@ -8,3 +8,30 @@ Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
     include_once __DIR__ . "/students.php";
     var_dump($classe);
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <ul>
+                <?php foreach ($classe as $key => $studente) {?>
+                    <li>
+                        <?php echo $studente["nome"] ?>
+                        <?php echo $studente["cognome"] ?>
+                    </li>
+                    <li>
+                        <?php foreach ($ as key => value) {?>
+                        
+                        <?php } ?>,
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
