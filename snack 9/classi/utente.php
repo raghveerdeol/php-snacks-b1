@@ -10,7 +10,7 @@ class utente {
     }
 
     public function getName(){
-        $this->nome=$nome;
+        $this->nome;
     }    
     
     public function setName($nome){
@@ -19,7 +19,7 @@ class utente {
 
 
     public function getSurname(){
-        $this->cognome=$cognome;
+        $this->cognome;
     }
 
     public function setSurname($cognome){

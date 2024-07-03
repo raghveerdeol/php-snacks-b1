@@ -9,7 +9,7 @@ class membership extends Utente {
     }
     
     public function getMembership(){
-        $this->membership=$membership;
+        $this->membership;
     }
 
     public function setMembership($membership){
