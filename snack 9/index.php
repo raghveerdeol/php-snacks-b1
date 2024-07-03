@@ -6,5 +6,6 @@ require_once __DIR__ . "/classi/utente.php";
 require_once __DIR__ . "/classi/utentePremium.php";
 
 $utenteA = new utente("luca","ravenna");
+$utenteA->setName("gino");
 var_dump($utenteA);
 ?>
