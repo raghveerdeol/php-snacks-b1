@@ -3,9 +3,13 @@
 //  PremiumUser. Aggiungiamo una classe Membership da passare nel
 //   costruttore della sottoclasse PremiumUser.
 require_once __DIR__ . "/classi/utente.php";
+require_once __DIR__ . "/classi/membership.php";
 require_once __DIR__ . "/classi/utentePremium.php";
 
 $utenteA = new utente("luca","ravenna");
 $utenteA->setName("gino");
 var_dump($utenteA);
+
+$utentePremiumB = new UtentePremium("luca","ravenna", true, 3);
+var_dump($utentePremiumB);
 ?>
