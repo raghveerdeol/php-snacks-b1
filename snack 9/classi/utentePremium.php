@@ -4,8 +4,8 @@ class utentePremium extends membership {
     
     private $level;
 
-    public function __construct($level,$membership,$nome,$cognome){
-        parent::__construct($membership,$nome,$cognome);
+    public function __construct($nome,$cognome,$membership,$level,){
+        parent::__construct($nome,$cognome,$membership,);
         $this->level=$level;
     }
 
